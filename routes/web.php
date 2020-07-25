@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.pages.index');
+Route::namespace('Frontend')->name('frontend.')->group(function () {
+    Route::get('/', 'IndexController@index');
 });
 
 /*
@@ -29,4 +29,8 @@ Auth::routes();
 |
 */
 
-Route::get('/backend/dashboard', 'Backend\DashboardController@index')->name('backend.dashboard');
+Route::namespace('Backend')->prefix('backend')->name('backend.')->middleware(['auth'])->group(function () {
+    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+    Route::get('user', 'UserController@index')->name('user');
+    Route::get('user/edit/{id}', 'UserController@edit')->name('user.edit');
+});
