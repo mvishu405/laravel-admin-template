@@ -14,11 +14,13 @@
         <link rel="stylesheet" href="{{ asset('backend/dist/css/adminlte.min.css') }}">
         <!-- Google Font: Source Sans Pro -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+        {{-- <link rel="stylesheet" href="{{ asset('backend/assets/css/app.css') }}"> --}}
     </head>
     
     <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
         
-        <div class="wrapper">
+        <div class="wrapper reactApp">
 
             @include('backend.includes.navbar')
             @include('backend.includes.sidebar')
@@ -52,5 +54,7 @@
         <script src="{{ asset('backend/plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
         <!-- ChartJS -->
         <script src="{{ asset('backend/plugins/chart.js/Chart.min.js') }}"></script>
+
+        {{-- <script src="{{ asset('backend/assets/js/app.js') }}"></script> --}}
     </body>
 </html>
