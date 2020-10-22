@@ -10,8 +10,9 @@ return [
 
     'backend_url_prefix' => 'backend',
     'uploads' => [
-        'image' => 'uploads/image',
+        'image' => 'uploads/images',
         'pdf' => 'uploads/pdf',
+        'video' => 'uploads/videos',
     ],
 
     /*
