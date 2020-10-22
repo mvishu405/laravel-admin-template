@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>AdminLTE 3 | Dashboard 2</title>
-        <link rel="stylesheet" href="{{ asset('backend/assets/css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('backend/css/app.css') }}">
     </head>
 
     <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -21,7 +21,7 @@
             @include('backend.includes.footer')
         </div>
 
-        <script src="{{ asset('backend/assets/js/app.js') }}"></script>
+        <script src="{{ asset('backend/js/app.js') }}"></script>
     </body>
 
 </html>

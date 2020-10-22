@@ -11,5 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.react('resources/js/app.js', 'public/backend/assets/js')
-    .sass('resources/sass/app.scss', 'public/backend/assets/css');
+ mix.react('resources/assets/backend/js/app.js', 'public/backend/js')
+    .sass('resources/assets/backend/sass/app.scss', 'public/backend/css')
+    .copyDirectory('node_modules/tinymce/skins', 'public/backend/js/skins')
+    .copyDirectory('resources/assets/backend/dist', 'public/backend/dist')
+    .browserSync({
+        proxy: 'http://127.0.0.1:8000'
+    });
+    
+// mix.react('resources/js/app.js', 'public/backend/assets/js')
+//     .sass('resources/sass/app.scss', 'public/backend/assets/css')
+    
