@@ -13,7 +13,7 @@
         "@babel/preset-react": "^7.12.13",
         "@fancyapps/fancybox": "^3.5.7",
         "@ttskch/select2-bootstrap4-theme": "^1.5.2",
-        "axios": "^0.19",
+        "axios": "^0.21",
         "bootstrap": "^4.6.0",
         "bootstrap-tagsinput": "^0.7.1",
         "browser-sync": "^2.26.14",
