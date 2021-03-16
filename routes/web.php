@@ -24,31 +24,6 @@ Auth::routes();
 
 /*
 |--------------------------------------------------------------------------
-| Register the typical authentication routes for an application.
-| Replacing: Auth::routes();
-|--------------------------------------------------------------------------
-*/
-
-// Route::namespace('Auth')->prefix(config('constants.backend_url_prefix'))->group(function () {
-//     // Authentication Routes...
-//     $this->get('login', 'LoginController@showLoginForm')->name('login');
-//     $this->post('login', 'LoginController@login');
-//     $this->post('logout', 'LoginController@logout')->name('logout');
-//     // Registration Routes...
-//     if (config('constants.register')) {
-//         $this->get('register', 'RegisterController@showRegistrationForm')->name('register');
-//         $this->post('register', 'RegisterController@register');
-//     }
-//     // Password Reset Routes...
-//     $this->get('password/reset', 'ForgotPasswordController@showLinkRequestForm')->name('password.request');
-//     $this->post('password/email', 'ForgotPasswordController@sendResetLinkEmail')->name('password.email');
-//     $this->get('password/reset/{token}', 'ResetPasswordController@showResetForm')->name('password.reset');
-//     $this->post('password/reset', 'ResetPasswordController@reset');
-// });
-
-
-/*
-|--------------------------------------------------------------------------
 | Backend Routes
 |--------------------------------------------------------------------------
 |
